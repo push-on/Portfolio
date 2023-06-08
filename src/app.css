@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* body {
+		@apply ;
+	} */
+  button {
+    @apply py-3 px-8 font-bold text-sm md:text-base lg:text-lg;
+  }
+
+  h1 {
+    @apply duration-100 text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl font-bold ;
+  }
+
+  h2 {
+    @apply duration-100 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold;
+  }
+
+  p {
+    @apply duration-100 text-sm sm:text-base lg:text-lg lg:font-medium;
+  }
+}
+
+/* @layer components {
+	.Custom-class {
+		@apply ;
+	}
+} */
