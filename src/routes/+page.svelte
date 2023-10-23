@@ -6,7 +6,7 @@
 
 <div class="flex">
   <!-- Content -->
-  <div class="w-full ml-16  ">
+  <div class="w-full">
     <Hero />
     <MyWork />
     <Footer />
