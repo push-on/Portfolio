@@ -7,8 +7,8 @@
 
 <div class=" h-screen flex justify-center items-center text-white py-20">
   <div class="w-full space-y-24">
-    <div class="flex justify-evenly flex-grow">
-      <IntersectionObserver {element} let:intersecting>
+    <IntersectionObserver {element} let:intersecting>
+      <div class="flex justify-evenly flex-grow">
         <div class=" flex-1">
           <div class="px-6 sm:px-10 md:px-15 lg:px-20">
             <div class="overflow-hidden py-4">
@@ -80,17 +80,23 @@
               decoding="async" />
           </div>
         </div>
-      </IntersectionObserver>
-    </div>
-    
-    <div class="flex justify-evenly">
-      <div class="flex-1 flex justify-center items-center">
-        <button class="animate-fade-down animate-delay-500">See My Work</button>
       </div>
-      <div class=" flex-1 flex justify-center items-center">
-        <button class="animate-fade-down animate-delay-500"
-          >Reach Out To Me</button>
+
+      <div
+        class={twMerge(
+          ` ${
+            intersecting
+              ? "animate-fade-down animate-delay-500"
+              : "animate-fade-up animate-reverse "
+          } flex justify-evenly`
+        )}>
+        <div class="flex-1 flex justify-center items-center">
+          <button>See My Work</button>
+        </div>
+        <div class=" flex-1 flex justify-center items-center">
+          <button>Reach Out To Me</button>
+        </div>
       </div>
-    </div>
+    </IntersectionObserver>
   </div>
 </div>

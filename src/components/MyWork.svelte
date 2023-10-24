@@ -45,7 +45,7 @@
         class={twMerge(
           ` ${
             myWorkInt
-              ? "animate-fade-down animate-delay-100 "
+              ? "animate-fade-down animate-delay-300 "
               : "animate-fade-up animate-reverse  "
           } text-violet-100 py-2 text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-[9rem] font-bold`
         )}>
@@ -69,7 +69,7 @@
                     class={twMerge(
                       ` ${
                         project.projectInt
-                          ? "animate-fade-down animate-delay-100 "
+                          ? "animate-fade-down animate-delay-300 "
                           : "animate-fade-up animate-reverse  "
                       } tracking-wide whitespace-nowrap text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold`
                     )}>
@@ -81,7 +81,7 @@
                     class={twMerge(
                       ` ${
                         project.projectInt
-                          ? "animate-fade-down animate-delay-100 "
+                          ? "animate-fade-down animate-delay-300 "
                           : "animate-fade-up animate-reverse  "
                       }text-violet-200 tracking-widest max-w-[200px] sm:max-w-md text-sm sm:text-base lg:text-lg lg:font-medium`
                     )}>
@@ -93,7 +93,7 @@
                     class={twMerge(
                       ` ${
                         project.projectInt
-                          ? "animate-fade-down animate-delay-100 "
+                          ? "animate-fade-down animate-delay-300 "
                           : "animate-fade-up animate-reverse  "
                       }text-violet-200 tracking-widest max-w-[200px] sm:max-w-md text-sm sm:text-base lg:text-lg lg:font-medium`
                     )}>
@@ -108,7 +108,7 @@
                 class={twMerge(
                   ` ${
                     project.projectInt
-                      ? "animate-fade-down animate-delay-100 "
+                      ? "animate-fade-down animate-delay-300 "
                       : "animate-fade-up animate-reverse  "
                   }rounded-3xl w-4/5 lg:w-3/5`
                 )}
@@ -120,7 +120,7 @@
             class={twMerge(
               ` ${
                 project.projectInt
-                  ? "animate-fade-down animate-delay-100 "
+                  ? "animate-fade-down animate-delay-300 "
                   : "animate-fade-up animate-reverse  "
               }flex justify-evenly py-20`
             )}>
