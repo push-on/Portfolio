@@ -1,5 +1,4 @@
 <script>
-  import viewport from "../lib/useViewportAction"
   const myWork = [
     {
       title: "Project 1",
@@ -34,9 +33,7 @@
   </div>
   {#each myWork as project (project.title)}
     <div
-      use:viewport
-      on:enterViewport={() => {}}
-      on:exitViewport={() => {}}
+
       class="flex justify-center items-center text-white py-10">
       <div class="w-full">
         <div class="flex justify-evenly flex-grow">
