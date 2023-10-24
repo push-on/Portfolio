@@ -8,6 +8,9 @@ dependencies:
   lucide-svelte:
     specifier: ^0.288.0
     version: 0.288.0(svelte@4.2.2)
+  tailwind-merge:
+    specifier: ^1.14.0
+    version: 1.14.0
   tailwindcss-animated:
     specifier: ^1.0.1
     version: 1.0.1(tailwindcss@3.3.3)
@@ -28,6 +31,9 @@ devDependencies:
   svelte:
     specifier: ^4.2.2
     version: 4.2.2
+  svelte-intersection-observer:
+    specifier: ^0.10.1
+    version: 0.10.1
   tailwindcss:
     specifier: ^3.3.3
     version: 3.3.3
@@ -988,6 +994,10 @@ packages:
       svelte: 4.2.2
     dev: true
 
+  /svelte-intersection-observer@0.10.1:
+    resolution: {integrity: sha512-hvWZwd0S8t0osA0ChJ4uJDsLvZlULyE3roDEc8mWyeiLT9y25NKT/CKfncsDyS7EGq3B9zb4ZxsH2uNaaXWP4A==}
+    dev: true
+
   /svelte@4.2.2:
     resolution: {integrity: sha512-My2tytF2e2NnHSpn2M7/3VdXT4JdTglYVUuSuK/mXL2XtulPYbeBfl8Dm1QiaKRn0zoULRnL+EtfZHHP0k4H3A==}
     engines: {node: '>=16'}
@@ -1005,6 +1015,10 @@ packages:
       locate-character: 3.0.0
       magic-string: 0.30.5
       periscopic: 3.1.0
+
+  /tailwind-merge@1.14.0:
+    resolution: {integrity: sha512-3mFKyCo/MBcgyOTlrY8T7odzZFx+w+qKSMAmdFzRvqBfLlSigU6TZnlFHK0lkMwj9Bj8OYU+9yW9lmGuS0QEnQ==}
+    dev: false
 
   /tailwindcss-animated@1.0.1(tailwindcss@3.3.3):
     resolution: {integrity: sha512-u5wusj89ZwP8I+s8WZlaAd7aZTWBN/XEG6QgMKpkIKmAf3xP1A6WYf7oYIKmGaB10UAQaSqWopi/i1ozzZEs8Q==}
