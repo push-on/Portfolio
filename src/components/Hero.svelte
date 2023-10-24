@@ -2,7 +2,7 @@
   import Profile from "../components/Profile.svelte"
 </script>
 
-<div class=" flex justify-center items-center text-white py-20">
+<div class=" h-screen flex justify-center items-center text-white py-20">
   <div class="w-full space-y-24">
     <div class="flex justify-evenly flex-grow">
       <div class=" flex-1">
