@@ -18,7 +18,7 @@
                   ` ${
                     intersecting
                       ? "animate-fade-down animate-delay-100 "
-                      : "opacity-0 "
+                      : "animate-fade-up animate-reverse  "
                   } tracking-wide text-amber-400 whitespace-nowrap text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold`
                 )}>
                 Hi There, I'm
@@ -30,22 +30,34 @@
                   ` ${
                     intersecting
                       ? "animate-fade-down animate-delay-200 "
-                      : "opacity-0 "
+                      : "animate-fade-up animate-reverse "
                   }
-                text-violet-100 text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-[9rem] font-bold`
+                 text-violet-100 text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-[9rem] font-bold`
                 )}>
                 Pushon
               </h1>
             </div>
             <div class="overflow-hidden py-4">
               <h2
-                class="animate-fade-down tracking-wide animate-delay-300 text-amber-400 whitespace-nowrap duration-100 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold">
+                class={twMerge(
+                  ` ${
+                    intersecting
+                      ? "animate-fade-down animate-delay-300 "
+                      : "animate-fade-up animate-reverse "
+                  } tracking-wide  text-amber-400 whitespace-nowrap duration-100 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold`
+                )}>
                 Full Stack Devloper
               </h2>
             </div>
             <div class="overflow-hidden py-4">
               <p
-                class=" text-violet-200 tracking-widest animate-fade-down animate-delay-500 max-w-[200px] sm:max-w-md duration-100 text-sm sm:text-base lg:text-lg lg:font-medium">
+                class={twMerge(
+                  ` ${
+                    intersecting
+                      ? "animate-fade-down animate-delay-400 "
+                      : "animate-fade-up animate-reverse "
+                  }  text-violet-200 tracking-widest  max-w-[200px] sm:max-w-md duration-100 text-sm sm:text-base lg:text-lg lg:font-medium`
+                )}>
                 I am passionate about solving business problems through
                 human-centered design. Curious by nature and business-minded.
               </p>
@@ -56,7 +68,13 @@
           <div>
             <img
               loading="lazy"
-              class="animate-fade animate-delay-300 shadow-2xl shadow-black/40 rounded-full duration-100 w-44 h-44 sm:w-52 sm:h-52 lg:w-96 lg:h-96"
+              class={twMerge(
+                ` ${
+                  intersecting
+                    ? "animate-fade-down animate-delay-500"
+                    : "animate-fade-up animate-reverse "
+                } shadow-2xl  shadow-black/40 rounded-full duration-100 w-44 h-44 sm:w-52 sm:h-52 lg:w-96 lg:h-96`
+              )}
               src={myImg}
               alt=""
               decoding="async" />
@@ -64,6 +82,7 @@
         </div>
       </IntersectionObserver>
     </div>
+    
     <div class="flex justify-evenly">
       <div class="flex-1 flex justify-center items-center">
         <button class="animate-fade-down animate-delay-500">See My Work</button>
