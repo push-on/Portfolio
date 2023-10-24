@@ -12,7 +12,7 @@
       <div
         class="flex-1 background rounded-tl-3xl border-l-2 border-l-violet-800" />
       <div
-        class="rounded-tr-3xl border-r-2 border-r-violet-600 flex-1 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-amber-300 via-violet-700 to-indigo-950" />
+        class="rounded-tr-3xl border-r-2 border-r-indigo-300 flex-1 bg-gradient-to-tr from-slate-950 via-indigo-950 to-violet-900" />
     </div>
     <div class="flex flex-col z-50 relative">
       <Hero />

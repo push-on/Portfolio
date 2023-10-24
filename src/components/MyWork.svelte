@@ -39,7 +39,7 @@
 
 <div>
   <IntersectionObserver element={myWorkID} bind:intersecting={myWorkInt}>
-    <div class="overflow-hidden py-4 px-6 sm:px-10 md:px-15 lg:px-20">
+    <div class=" py-2 px-2 sm:px-10 md:px-15 lg:px-20">
       <h1
         bind:this={myWorkID}
         class={twMerge(
@@ -47,7 +47,7 @@
             myWorkInt
               ? "animate-fade-down animate-delay-300 "
               : "animate-fade-up animate-reverse  "
-          } text-violet-100 py-2 text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-[9rem] font-bold`
+          } text-violet-100 text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-[9rem] font-bold`
         )}>
         My Work
       </h1>
@@ -59,11 +59,11 @@
       bind:intersecting={project.projectInt}>
       <div
         bind:this={project.projectID}
-        class="flex justify-center items-center text-white py-10">
+        class="flex justify-center items-center text-white">
         <div class="w-full">
           <div class="flex justify-evenly flex-grow">
             <div class="flex-1">
-              <div class="px-6 sm:px-10 md:px-15 lg:px-20">
+              <div class="px-2 sm:px-10 md:px-15 lg:px-20">
                 <div class="overflow-hidden py-4">
                   <h2
                     class={twMerge(
