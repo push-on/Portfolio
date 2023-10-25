@@ -37,9 +37,9 @@
   let myWorkInt
 </script>
 
-<div>
+<div class="mt-10 sm:mt-0">
   <IntersectionObserver element={myWorkID} bind:intersecting={myWorkInt}>
-    <div class=" py-2 px-2 sm:px-10 md:px-15 lg:px-20">
+    <div class=" pb-4 sm:pb-10 px-2 sm:px-10 md:px-15 lg:px-20">
       <h1
         bind:this={myWorkID}
         class={twMerge(
@@ -59,70 +59,69 @@
       bind:intersecting={project.projectInt}>
       <div
         bind:this={project.projectID}
-        class="flex justify-center items-center text-white">
+        class="flex justify-center items-center text-white mb-5 lg:mb-20">
         <div class="w-full">
           <div class="flex justify-evenly flex-grow">
             <div class="flex-1">
-              <div class="px-2 sm:px-10 md:px-15 lg:px-20">
-                <div class="overflow-hidden py-4">
-                  <h2
-                    class={twMerge(
-                      ` ${
-                        project.projectInt
-                          ? "animate-fade-down animate-delay-300 "
-                          : "animate-fade-up animate-reverse  "
-                      } tracking-wide whitespace-nowrap text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold`
-                    )}>
-                    {project.title}
-                  </h2>
-                </div>
-                <div class="overflow-hidden py-4">
-                  <p
-                    class={twMerge(
-                      ` ${
-                        project.projectInt
-                          ? "animate-fade-down animate-delay-300 "
-                          : "animate-fade-up animate-reverse  "
-                      }text-violet-200 tracking-widest max-w-[200px] sm:max-w-md text-sm sm:text-base lg:text-lg lg:font-medium`
-                    )}>
-                    {project.description}
-                  </p>
-                </div>
-                <div class="overflow-hidden py-4">
-                  <p
-                    class={twMerge(
-                      ` ${
-                        project.projectInt
-                          ? "animate-fade-down animate-delay-300 "
-                          : "animate-fade-up animate-reverse  "
-                      }text-violet-200 tracking-widest max-w-[200px] sm:max-w-md text-sm sm:text-base lg:text-lg lg:font-medium`
-                    )}>
-                    Tech Stack: {project.techStack}
-                  </p>
-                </div>
+              <div
+                class="space-y-2 md:space-y-4 px-2 sm:px-10 md:px-15 lg:px-20">
+                <h2
+                  class={twMerge(
+                    ` ${
+                      project.projectInt
+                        ? "animate-fade-down animate-delay-300 "
+                        : "animate-fade-up animate-reverse  "
+                    } tracking-wide whitespace-nowrap text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold `
+                  )}>
+                  {project.title}
+                </h2>
+
+                <p
+                  class={twMerge(
+                    ` ${
+                      project.projectInt
+                        ? "animate-fade-down animate-delay-300 "
+                        : "animate-fade-up animate-reverse  "
+                    }text-violet-200 tracking-widest max-w-[200px] sm:max-w-md text-xs sm:text-base lg:text-lg lg:font-medium`
+                  )}>
+                  {project.description}
+                </p>
+
+                <p
+                  class={twMerge(
+                    ` ${
+                      project.projectInt
+                        ? "animate-fade-down animate-delay-300 "
+                        : "animate-fade-up animate-reverse  "
+                    }text-violet-200 tracking-widest max-w-[200px] sm:max-w-md text-xs sm:text-base lg:text-lg lg:font-medium`
+                  )}>
+                  Tech Stack: {project.techStack}
+                </p>
               </div>
             </div>
-            <div
-              class="flex-1 flex justify-center items-center pr-2 sm:pr-3 lg:pr-0">
+            <!-- Right Side -->
+            <!-- Image -->
+            <div class="flex-1 flex justify-center items-center">
               <img
                 class={twMerge(
                   ` ${
                     project.projectInt
                       ? "animate-fade-down animate-delay-300 "
                       : "animate-fade-up animate-reverse  "
-                  }rounded-3xl w-4/5 lg:w-3/5`
+                  }rounded-3xl w-full lg:w-3/5 border sm:border-2 lg:border-4 border-indigo-700 shadow-2xl shadow-black/70`
                 )}
                 src={project.imageSrc}
                 alt="" />
             </div>
           </div>
+          <!-- Button -->
           <div
             class={twMerge(
               ` ${
                 project.projectInt
                   ? "animate-fade-down animate-delay-300 "
                   : "animate-fade-up animate-reverse  "
-              }flex justify-evenly py-20`
+              }flex justify-evenly py-5 md:py-20 `
             )}>
             <div class="flex-1 flex justify-center items-center">
               <button>View Work</button>

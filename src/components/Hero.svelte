@@ -31,7 +31,7 @@
                       ? "animate-fade-down animate-delay-200 "
                       : "animate-fade-up animate-reverse "
                   }
-                 text-violet-100 text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-[9rem] font-bold`
+                 text-violet-100 text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-[9rem] font-bold `
                 )}>
                 Pushon
               </h1>
@@ -52,7 +52,7 @@
                   intersecting
                     ? "animate-fade-down animate-delay-300 "
                     : "animate-fade-up animate-reverse "
-                }  text-violet-200 tracking-widest  max-w-[200px] sm:max-w-md duration-100 text-sm sm:text-base lg:text-lg lg:font-medium`
+                }  text-violet-200 tracking-widest  max-w-[200px] sm:max-w-md duration-100 text-xs sm:text-base lg:text-lg lg:font-medium`
               )}>
               I am passionate about solving business problems through
               human-centered design. Curious by nature and business-minded.
@@ -68,19 +68,28 @@
               <ul
                 class="flex justify-evenly sm:justify-start sm:gap-4 sm:px-2 space-x-2 py-2 my-2 sm:my-4">
                 <li class="shadow-xl shadow-black">
-                  <a href="/"><Github color="#c7d2fe" /></a>
+                  <a href="https://github.com/push-on" target="_blank"
+                    ><Github color="#c7d2fe" /></a>
                 </li>
                 <li class="shadow-xl shadow-black">
-                  <a href="/"><Mail color="#c7d2fe" /></a>
+                  <a href="/" target="_blank"><Mail color="#c7d2fe" /></a>
                 </li>
                 <li class="shadow-xl shadow-black">
-                  <a href="/"><Linkedin color="#c7d2fe" /> </a>
+                  <a href="https://www.linkedin.com/in/pushon/" target="_blank"
+                    ><Linkedin color="#c7d2fe" />
+                  </a>
                 </li>
                 <li class="shadow-xl shadow-black">
-                  <a href="/"><Twitter color="#c7d2fe" /> </a>
+                  <a href="https://twitter.com/pushon_art" target="_blank"
+                    ><Twitter color="#c7d2fe" />
+                  </a>
                 </li>
                 <li class="shadow-xl shadow-black">
-                  <a href="/"><Instagram color="#c7d2fe" /> </a>
+                  <a
+                    href="https://www.instagram.com/pushon_art/"
+                    target="_blank"
+                    ><Instagram color="#c7d2fe" />
+                  </a>
                 </li>
               </ul>
             </div>
