@@ -72,7 +72,7 @@
                     ><Github color="#c7d2fe" /></a>
                 </li>
                 <li class="shadow-xl shadow-black">
-                  <a href="/" target="_blank"><Mail color="#c7d2fe" /></a>
+                  <a href="/mail"><Mail color="#c7d2fe" /></a>
                 </li>
                 <li class="shadow-xl shadow-black">
                   <a href="https://www.linkedin.com/in/pushon/" target="_blank"
