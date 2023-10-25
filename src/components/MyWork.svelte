@@ -124,10 +124,10 @@
               }flex justify-evenly py-5 md:py-20 `
             )}>
             <div class="flex-1 flex justify-center items-center">
-              <button>View Work</button>
+              <button class="btn">View Work</button>
             </div>
             <div class="flex-1 flex justify-center items-center">
-              <button>See Live Demo</button>
+              <button class="btn">See Live Demo</button>
             </div>
           </div>
         </div>
